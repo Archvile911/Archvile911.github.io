@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  cursor: url('https://raw.githubusercontent.com/Archvile911/Archvile911.github.io/main/cursor.png') 16 16, auto;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 24px;
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.link-red {
+  color: red;
+}
+
+.link-blue {
+  color: blue;
+}
+
+@keyframes hoverBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.links a:hover {
+  text-shadow: 0 0 5px white, 0 0 10px currentColor, 0 0 15px currentColor, 0 0 20px currentColor;
+  animation: hoverBounce 0.6s ease-in-out;
+}
+
+audio {
+  margin-top: 20px;
+}
